@@ -184,13 +184,13 @@ module Gbif
     #      speices = Gbif::Species
     #      speices.name_lookup(q: "Helianthus")
     #      speices.name_lookup(q: "Poa")
-    def self.name_lookup(q: nil, rank: nil, higherTaxonKey: nil, status: nil,
+    def self.name_lookup(q: nil, qField: nil, rank: nil, higherTaxonKey: nil, status: nil,
       isExtinct: nil, habitat: nil, nameType: nil, datasetKey: nil,
       nomenclaturalStatus: nil, limit: 100, offset: nil, facet: false,
       facetMincount: nil, facetMultiselect: nil, type: nil, hl: false,
       verbosity: false, verbose: nil, options: nil)
 
-      arguments = { q: q, rank: rank, higherTaxonKey: higherTaxonKey,
+      arguments = { q: q, qField: qField, rank: rank, higherTaxonKey: higherTaxonKey,
         status: status, isExtinct: isExtinct, habitat: habitat, nameType: nameType,
         datasetKey: datasetKey, nomenclaturalStatus: nomenclaturalStatus,
         limit: limit, offset: offset, facet: facet, facetMincount: facetMincount,
